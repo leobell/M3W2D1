@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .navbar-container {
     height: 8vh;
 }
@@ -23,38 +27,24 @@
     margin-right: 10px;
 }
 
-.cards {
-    justify-content: center;
-}
-
 .card-container {
     box-sizing: border-box;
     box-shadow: 0 0 10px rgb(110, 110, 110);
     border-radius: 20px;
     overflow: hidden;
-    width: 600px;
-    height:250px;
-    
-}
-
-@media (min-width: 768px){
-    .card-container{
-        width: 300px;
-        height:200px;
-    }
-    .card-container h3 {
-        font-size: 1.4rem;
-    }
+    margin-bottom: 20px;
 }
 
 .card-container .card-img-top {
+    aspect-ratio: 1 / 1;
     margin-bottom: 8px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 8px rgb(110, 110, 110);
-    height: 80%;
     object-fit: cover;
 }
+
 .card-container h3 {
     text-align: center;
+    font-size: 1.2rem;
 }

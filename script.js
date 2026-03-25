@@ -23,6 +23,12 @@ const getPhotos = async () => {
 }
 
 const generateCard = (photo) =>{
+    const colCol4 = document.createElement("div")
+    colCol4.classList.add("col")
+    colCol4.classList.add("col-12")
+    colCol4.classList.add("col-sm-6")
+    colCol4.classList.add("col-md-4")
+
     const cardContainer = document.createElement("div")
     cardContainer.classList.add("card-container")
     //cardContainer.classList.add("card")
@@ -36,7 +42,8 @@ const generateCard = (photo) =>{
 
     const cards = document.querySelector(".cards")
     cardContainer.append(img,artist)
-    cards.appendChild(cardContainer)
+    cards.appendChild(colCol4)
+    colCol4.appendChild(cardContainer)
 }
 
 searchBtn.addEventListener("click", async () => {
